@@ -10,14 +10,14 @@
     "aiou"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/JiangWeixian/templates#readme",
+  "homepage": "https://github.com/spring-catponents/dayjs-plugin-template#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JiangWeixian/templates.git",
+    "url": "git+https://github.com/spring-catponents/dayjs-plugin-template.git",
     "directory": "packages/dayjs-plugin-template"
   },
   "bugs": {
-    "url": "https://github.com/JiangWeixian/templates/issues",
+    "url": "https://github.com/spring-catponents/dayjs-plugin-template/issues",
     "email": "jiangweixian1994@gmail.com"
   },
   "author": {
