@@ -1,20 +1,19 @@
 # @aiou/dayjs-plugin-template
 *build dayjs plugin lib*
 
-[![npm](https://img.shields.io/npm/v/@aiou/dayjs-plugin-template)](https://github.com/spring-catponents/dayjs-plugin-template/tree/master/packages/dayjs-plugin-template) [![GitHub](https://img.shields.io/npm/l/@aiou/dayjs-plugin-template)](https://github.com/spring-catponents/dayjs-plugin-template/tree/master/packages/dayjs-plugin-template) [![stackblitz](https://img.shields.io/badge/%E2%9A%A1%EF%B8%8Fstackblitz-online-blue)](https://stackblitz.com/github/spring-catponents/dayjs-plugin-template/tree/master/packages/dayjs-plugin-template)
+[![npm](https://img.shields.io/npm/v/@aiou/dayjs-plugin-template)](https://github.com/spring-catponents/dayjs-plugin-template/tree/master) [![GitHub](https://img.shields.io/npm/l/@aiou/dayjs-plugin-template)](https://github.com/spring-catponents/dayjs-plugin-template/tree/master) [![stackblitz](https://img.shields.io/badge/%E2%9A%A1%EF%B8%8Fstackblitz-online-blue)](https://stackblitz.com/github/spring-catponents/dayjs-plugin-template/tree/master)
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/github/spring-catponents/dayjs-plugin-template/tree/master/packages/dayjs-plugin-template)
+[Edit on StackBlitz ⚡️](https://stackblitz.com/github/spring-catponents/dayjs-plugin-template/tree/master)
 
 ## features
 
-- ✨ build and write with `typescript`
-- ✨ good typo define
+- 💪 Type safe - build with `typescript`
 
 ## install
 > demo usage of this repo
 
 ```sh
-yarn add @aiou/dayjs-plugin-template dayjs
+pnpm i @aiou/dayjs-plugin-template dayjs
 ```
 
 ## usage
