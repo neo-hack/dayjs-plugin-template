@@ -1,5 +1,11 @@
 # @aiou/dayjs-plugin-template
 
+## 1.1.0
+
+### Minor Changes
+
+- 398c744: neo prepack https://github.com/spring-catponents/templates/tree/master/packages/core#commands
+
 ## 1.0.6
 
 ### Patch Changes
