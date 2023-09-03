@@ -14,8 +14,7 @@
   "homepage": "https://github.com/neo-hack/dayjs-plugin-template#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/neo-hack/dayjs-plugin-template.git",
-    "directory": "packages/dayjs-plugin-template"
+    "url": "git+https://github.com/neo-hack/dayjs-plugin-template.git"
   },
   "bugs": {
     "url": "https://github.com/neo-hack/dayjs-plugin-template/issues",
