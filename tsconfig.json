@@ -1,11 +1,13 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "ES2020",
     "module": "ESNext",
     "moduleResolution": "node",
     "importHelpers": true,
     "esModuleInterop": true,
-    "declaration": false,
+    "declaration": true,
+    "declarationDir": "dts",
+    "emitDeclarationOnly": true,
     "sourceMap": false,
     "noImplicitAny": false,
     "allowSyntheticDefaultImports": true,
