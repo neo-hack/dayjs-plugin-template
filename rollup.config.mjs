@@ -1,8 +1,11 @@
+import path from 'node:path'
+
 import alias from '@rollup/plugin-alias'
 import commonjs from '@rollup/plugin-commonjs'
 import resolve from '@rollup/plugin-node-resolve'
 import { defineConfig } from 'rollup'
 import esbuild from 'rollup-plugin-esbuild'
+import filesize from 'rollup-plugin-filesize'
 import { externals } from 'rollup-plugin-node-externals'
 
 export default defineConfig([
@@ -23,10 +26,16 @@ export default defineConfig([
         target: 'node16',
       }), // so Rollup can convert TypeScript to JavaScript
       alias({
-        resolve: ['.ts', '.js', '.tsx', '.jsx'],
-        entries: [{ find: '@/', replacement: './src/' }],
+        customResolver: resolve({ extensions: ['.tsx', '.ts'] }),
+        entries: Object.entries({
+          '@/*': ['./src/*'],
+        }).map(([alias, value]) => ({
+          find: new RegExp(`${alias.replace('/*', '')}`),
+          replacement: path.resolve(process.cwd(), `${value[0].replace('/*', '')}`),
+        })),
       }),
       commonjs(),
+      filesize(),
     ],
     output: [
       { format: 'cjs', dir: 'dist', entryFileNames: '[name].cjs' },
