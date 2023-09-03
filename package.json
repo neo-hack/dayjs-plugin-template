@@ -1,6 +1,6 @@
 {
   "name": "@aiou/dayjs-plugin-template",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "dayjs plugin template",
   "packageManager": "pnpm@7.29.3",
   "keywords": [
