@@ -1,5 +1,5 @@
 import type { PluginFunc } from 'dayjs'
-import type plugin from './typings/index'
+import type plugin from './typings'
 
 class Hello implements plugin.Hello {
   $word = ''

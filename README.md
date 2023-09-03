@@ -8,6 +8,7 @@
 ## features
 
 - 💪 Type safe - build with `typescript`
+- ⚡ Fast - build with `esbuild`
 
 ## install
 > demo usage of this repo
