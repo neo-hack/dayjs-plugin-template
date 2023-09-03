@@ -1,4 +1,5 @@
 import dayjs from 'dayjs'
+import { describe, it } from 'vitest'
 
 import Hello from '../src/index'
 

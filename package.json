@@ -33,11 +33,8 @@
   "scripts": {
     "build": "rimraf lib && rollup -c --silent",
     "dev": "rollup -c -w --silent",
-    "test": "jest",
-    "pretest": "yarn run build",
-    "update": "yarn update && yarn update --save-dev",
-    "check": "yarn outdated && npm outdated --save-dev",
-    "release": "yarn run build && np --no-cleanup --yolo --no-publish --any-branch",
+    "test": "vitest",
+    "pretest": "pnpm run build",
     "ci:publish": "pnpm run build && pnpm changeset publish",
     "ci:version": "pnpm changeset version",
     "ci:snapshot": "pnpm changeset version --snapshot beta",
@@ -63,7 +60,6 @@
     "@rollup/plugin-alias": "^3.1.8",
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.0.6",
-    "@types/jest": "26.0.24",
     "@types/lodash.chunk": "^4.2.6",
     "@types/node": "^20.5.9",
     "copyfiles": "^2.4.1",
@@ -71,16 +67,15 @@
     "dayjs": "^1.9.7",
     "eslint": "8.48.0",
     "husky": "^7.0.0",
-    "jest": "27.0.6",
     "lint-staged": "^11.0.1",
     "rimraf": "3.0.2",
     "rollup": "2.53.2",
     "rollup-plugin-bundle-size": "^1.0.3",
     "rollup-plugin-exclude-dependencies-from-bundle": "^1.1.20",
     "rollup-plugin-typescript2": "0.31.0",
-    "ts-jest": "27.0.3",
     "ts-node": "10.1.0",
-    "typescript": "^4.3.5"
+    "typescript": "^4.3.5",
+    "vitest": "^0.34.3"
   },
   "config": {
     "commitizen": {
