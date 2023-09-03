@@ -1,9 +1,10 @@
-import resolve from '@rollup/plugin-node-resolve'
-import commonjs from '@rollup/plugin-commonjs'
-import typescript from 'rollup-plugin-typescript2'
 import alias from '@rollup/plugin-alias'
-import excludeDependenciesFromBundle from 'rollup-plugin-exclude-dependencies-from-bundle'
+import commonjs from '@rollup/plugin-commonjs'
+import resolve from '@rollup/plugin-node-resolve'
 import bundleSize from 'rollup-plugin-bundle-size'
+import excludeDependenciesFromBundle from 'rollup-plugin-exclude-dependencies-from-bundle'
+import typescript from 'rollup-plugin-typescript2'
+
 import pkg from './package.json'
 
 export default [

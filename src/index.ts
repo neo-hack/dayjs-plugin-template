@@ -1,6 +1,5 @@
-import { PluginFunc } from 'dayjs'
-
-import plugin from './typings/index'
+import type { PluginFunc } from 'dayjs'
+import type plugin from './typings/index'
 
 class Hello implements plugin.Hello {
   $word = ''
@@ -14,7 +13,7 @@ class Hello implements plugin.Hello {
 }
 
 const wrapper: PluginFunc = (_options, _Dayjs, dayjs) => {
-  ;(dayjs as any).hello = (input: plugin.Input = { word: '' }) => {
+  (dayjs as any).hello = (input: plugin.Input = { word: '' }) => {
     return new Hello(input)
   }
 }

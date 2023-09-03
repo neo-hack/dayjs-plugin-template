@@ -1,11 +1,14 @@
-import { PluginFunc } from 'dayjs'
+/* eslint-disable @typescript-eslint/no-redeclare */
+import type { PluginFunc } from 'dayjs'
 
 declare const plugin: PluginFunc
 export as namespace plugin
 export = plugin
 
 declare namespace plugin {
-  export type Input = { word: string }
+  export interface Input {
+    word: string
+  }
   interface Hello {
     $word: string
     say(): void
