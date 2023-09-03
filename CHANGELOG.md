@@ -1,5 +1,11 @@
 # @aiou/dayjs-plugin-template
 
+## 1.1.1
+
+### Patch Changes
+
+- 74eb02b: fix load tslib failed on node18
+
 ## 1.1.0
 
 ### Minor Changes
